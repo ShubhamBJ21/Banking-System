@@ -32,6 +32,7 @@ public class UserCrud {
 		System.out.println("Enter your password");
 		String password = sc.nextLine();
 		password = password.trim();
+		//checkPassword(password);//------------------------
 
 		Connection connection = Connector.Connect();
 
@@ -124,5 +125,9 @@ public class UserCrud {
 			System.out.println("Password not found in database");
 			return null;
 		}
+	}
+	
+	public static void checkPassword(String password) {
+		
 	}
 }
